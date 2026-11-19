@@ -1,0 +1,9 @@
+2026-11-19 18:08:10,237 - INFO - HTTP Request: HEAD https://huggingface.co/ibm-esa-geospatial/TerraMind-1.0-tiny/resolve/main/TerraMind_v1_tiny.pt "HTTP/1.1 302 Found"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-19 18:08:10,238 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Urban-flood pixels: 396
+Logits: (1, 3, 256, 256)
+Step 1 loss: 0.6777
+Head weights updated: yes
+Training step including startup: 0.194 s
+Peak allocated CUDA memory: 35 MiB

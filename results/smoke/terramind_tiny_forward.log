@@ -1,0 +1,11 @@
+Input [batch, channels, height, width]: (1, 2, 256, 256)
+Urban-flood pixels: 396
+Loading pretrained TerraMind Tiny...
+2026-11-19 18:07:04,039 - INFO - HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-11-19 18:07:04,141 - INFO - HTTP Request: HEAD https://huggingface.co/ibm-esa-geospatial/TerraMind-1.0-tiny/resolve/main/TerraMind_v1_tiny.pt "HTTP/1.1 302 Found"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-19 18:07:04,141 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-19 18:07:04,260 - INFO - HTTP Request: GET https://huggingface.co/api/models/ibm-esa-geospatial/TerraMind-1.0-tiny/xet-read-token/2b5ac0a3ed7dd7e922ccfd595b56607f342df343 "HTTP/1.1 200 OK"
+Feature shapes: [(1, 256, 192), (1, 256, 192), (1, 256, 192), (1, 256, 192), (1, 256, 192), (1, 256, 192), (1, 256, 192), (1, 256, 192), (1, 256, 192), (1, 256, 192), (1, 256, 192), (1, 256, 192)]
+First forward pass: 0.045 s
+Peak allocated CUDA memory: 35 MiB
