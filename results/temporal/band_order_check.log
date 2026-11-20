@@ -1,0 +1,22 @@
+Training tiles read: 471 of 471 in 03_FU
+Valid pixels [non-flooded, flooded open, flooded urban]: [114219895, 3541110, 363550]
+
+Band   Lowest  Highest   Mean non-flooded   Mean flooded open   Mean flooded urban
+   1     0.00     1.00              0.339               0.253                0.524
+   2     0.00     1.00              0.435               0.325                0.648
+   3     0.00     1.00              0.246               0.104                0.225
+   4     0.00     1.00              0.322               0.116                0.301
+   5   -60.00     6.99            -14.585             -15.397              -13.069
+   6   -60.00     6.99             -8.496              -9.614               -6.014
+   7   -60.00     6.99            -13.747             -22.314              -12.365
+   8   -60.00     6.99             -7.518             -16.943               -4.318
+
+1. Coherence or intensity? Bands 1-4 lie in [0.00, 1.00], bands 5-8 in [-60.0, 7.0] dB.
+2. VH or VV? VV is the brighter one. Non-flooded: band 6 - band 5 = +6.1 dB, band 8 - band 7 = +6.2 dB.
+3. Pre- or post-event intensity? Open water is dark. Flooded open: band 7 - band 5 = -6.9 dB, band 8 - band 6 = -7.3 dB.
+4. Pre- or co-event coherence? Flooding lowers it. Flooded urban: band 1 - band 3 = +0.30, band 2 - band 4 = +0.35; 100.0% of flooded-urban pixels exceed 0.3 in at least one.
+
+Mean change by class      VV intensity   VH intensity   VV coherence drop   VH coherence drop
+non-flooded                  +0.98 dB       +0.84 dB              +0.113              +0.093
+flooded open                 -7.33 dB       -6.92 dB              +0.209              +0.149
+flooded urban                +1.70 dB       +0.70 dB              +0.347              +0.299

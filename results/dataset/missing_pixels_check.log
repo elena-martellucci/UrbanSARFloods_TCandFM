@@ -1,0 +1,15 @@
+Training: 4501 tiles, 1286 with missing pixels (28.6%), 41 without any valid pixel
+Missing pixels: 15.6% of all pixels
+Class               Pixels      Missing          In tiles with missing pixels
+Non-flooded     1161425968    184151059  15.9%             334522384  28.8%
+Flooded open      18120626        97372   0.5%               2488720  13.7%
+Flooded urban       363550            0   0.0%                106080  29.2%
+
+Validation: 1970 tiles, 537 with missing pixels (27.3%), 13 without any valid pixel
+Missing pixels: 14.0% of all pixels
+Class               Pixels      Missing          In tiles with missing pixels
+Non-flooded      508289393     72105741  14.2%             139645494  27.5%
+Flooded open       7960421        34636   0.4%               1081582  13.6%
+Flooded urban       173866            0   0.0%                 44252  25.5%
+
+Wrote 54 tiles without any valid pixel to empty_tiles.txt
