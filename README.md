@@ -187,6 +187,23 @@ The mean step time excludes the first three warm-up steps and measures training 
 - [Non-flooded crop log](results/smoke/unet_256_10steps.log)
 - [Urban-flood crop log](results/smoke/unet_flooded_256_10steps.log)
 
+## TerraMind Tiny smoke test on LIACS
+
+Run from the repository root in the TerraMind CUDA environment. The smoke test uses `data/smoke_flooded` by default, with the same one-tile layout described above.
+
+```bash
+HF_HUB_CACHE="$PWD/data/.hf-cache" python smoke_terramind.py forward
+HF_HUB_CACHE="$PWD/data/.hf-cache" python smoke_terramind.py head-step
+```
+
+After the dataset loader update, we reran `head-step` on the RTX 4060. The frozen TerraMind Tiny encoder used the post-event VV/VH pair from a clean 256 × 256 crop containing 396 urban-flood pixels. The three-class segmentation head updated its weights after one training step. The loss was **0.6777**, the step took **0.195 s including startup**, and peak allocated GPU memory was **35 MiB**.
+
+This verifies compatibility with the updated loader on a clean crop. Testing TerraMind on crops with missing pixels and integrating the remaining SAR bands are follow-up work.
+
+- [Original TerraMind forward pass](results/smoke/terramind_tiny_forward.log)
+- [Original TerraMind training step](results/smoke/terramind_tiny_head_step.log)
+- [TerraMind training step with the updated loader](results/smoke/terramind_updated_loader.log)
+
 ## Team
 
 - Beyza Celep
